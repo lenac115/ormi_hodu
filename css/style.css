@@ -1,0 +1,48 @@
+
+/* 폰트 설정 */
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Pretendard-Bold';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+    font-weight: 700;
+}
+
+/* 태그 선택자 설정 */
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+main {
+    position:relative;
+}
+
+a {
+    font-size:16px;
+    line-height:20px;
+    text-decoration-line: none;
+    color:black;
+}
+
+header {
+    position:relative;
+    width: 100vw;
+    height: 902px;
+    background-color: #F2E9D8;
+}
+
+footer {
+    position:absolute;
+    width:100vw;
+    height:160px;
+    top:3179px;
+}
+
+button {
+    cursor: pointer;
+}

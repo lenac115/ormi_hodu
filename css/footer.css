@@ -1,0 +1,34 @@
+
+/* footer 관련 설정 */
+
+.footerLogo {
+    position:absolute;
+    width: 226px;
+    height: 70px;
+    top: 45px;
+    left:320px;
+}
+
+.footerIconGroup{
+    position:relative;
+    width:228px;
+    height:42px;
+    top:58px;
+    left:1372px;
+    display: flex;
+    gap:20px;
+}
+
+.footerCircle {
+    width:42px;
+    height:42px;
+    border-radius: 50%;
+    background-color: #F29D52;
+    border: none;
+}
+
+.footerImg {
+    width: 24px;
+    height: 24px;
+    align-content: center;
+}
