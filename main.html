@@ -59,13 +59,17 @@
     </header>
 
     <main>
-        <img src="img/img_4.png" alt="main의 첫 고양이 사진입니다" class="imgMainCat"/>
-        <div class="mainP1">
-            Lorem Ipsum is simply<br>
-            dummy text of the printing and dummy text
-        </div>
-        <div class="mainP2">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        <div class="mainFirstArea">
+            <img src="img/img_4.png" alt="main의 첫 고양이 사진입니다" class="imgMainCat"/>
+            <div class="mainP1Area">
+                <div class="mainP1">
+                    Lorem Ipsum is simply<br>
+                    dummy text of the printing and dummy text
+                </div>
+                <div class="mainP2">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </div>
+            </div>
         </div>
         <div class="mainHead">
             dummy text of the printing and dummy
@@ -83,14 +87,15 @@
             <img src="img/imgline2-2.png" alt="두번째 고양이 이미지 라인의 두번째 이미지입니다." class="lineImg"/>
             <img src="img/imgline2-3.png" alt="두번째 고양이 이미지 라인의 세번째 이미지입니다." class="lineImg"/>
         </div>
-        <div class="mainImgLine2">
+        <!--<div class="mainImgLine2">
             <img src="https://picsum.photos/378?random=1" alt="추가 랜덤 사진입니다." class="lineImg"/>
             <img src="https://picsum.photos/378?random=2" alt="숨겨진 세번째 고양이 라인의 두번째 이미지입니다." class="lineImg"/>
             <img src="https://picsum.photos/378?random=3" alt="숨겨진 세번째 고양이 라인의 세번째 이미지입니다." class="lineImg"/>
             <img src="https://picsum.photos/378?random=4" alt="숨겨진 네번째 고양이 라인의 첫번째 이미지입니다." class="lineImg"/>
             <img src="https://picsum.photos/378?random=5" alt="숨겨진 네번째 고양이 라인의 두번째 이미지입니다." class="lineImg"/>
             <img src="https://picsum.photos/378?random=6" alt="숨겨진 네번째 고양이 라인의 세번째 이미지입니다." class="lineImg"/>
-        </div>
+        </div>-->
+
         <div class="mainPContinue" id="btnContinue">
             Continue exploring HODU
             <button class="continueButton">
@@ -114,22 +119,26 @@
 
 
         <div class="mainSubscribeArea">
-            <div class="mainSubscribeHead">
-                Subscribe to our Blog post
+            <div class="mainSubText">
+                <div class="mainSubscribeHead">
+                    Subscribe to our Blog post
+                </div>
+                <div class="mainSubscribeDetails">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
+                    Lorem Ipsum has been the industry's standard dummy text
+                </div>
             </div>
-            <div class="mainSubscribeDetails">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
-                Lorem Ipsum has been the industry's standard dummy text
-            </div>
-            <div class="mainSubscribeEmail">
-                <label for="email">
-                    <img src="img/mail.png" class="mainEmailImg" alt="Subscribe의 Email 작성창의 Email 마크입니다."/>
-                </label>
-                <input type="text" id="email" placeholder="Enter your e-mail address" class="mainSubscribeInput"/>
+            <div class="mainSubEmailArea">
+                <div class="mainSubscribeEmail">
+                    <label for="email">
+                        <img src="img/mail.png" class="mainEmailImg" alt="Subscribe의 Email 작성창의 Email 마크입니다."/>
+                    </label>
+                    <input type="text" id="email" placeholder="Enter your e-mail address" class="mainSubscribeInput"/>
 
-                <button type="reset" class="mainSubscribeButton">
-                    <span class="buttonText">Subscribe</span>
-                </button>
+                    <button type="reset" class="mainSubscribeButton">
+                        <span class="buttonText">Subscribe</span>
+                    </button>
+                </div>
             </div>
         </div>
 
@@ -144,11 +153,10 @@
                 </button>
             </div>
         </div>
-
-        <div class="mainBackgroundCatImg">
-            <img src="img/backgroundCat.png" alt="메인의 배경의 반투명 고양이 사진입니다."/>
-        </div>
     </main>
+    <div class="mainBackgroundCatImg">
+        <img src="img/backgroundCat.png" alt="메인의 배경의 반투명 고양이 사진입니다."/>
+    </div>
     <footer>
         <img src="img/Logo-fin.png" class="footerLogo" alt="footer의 Hodu 로고 이미지입니다."/>
         <div class="footerIconGroup">

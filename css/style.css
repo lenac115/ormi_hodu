@@ -18,7 +18,7 @@ body {
 }
 
 main {
-    position:relative;
+    width: 1280px;
     margin-left:320px;
     margin-right:320px;
 }
@@ -38,12 +38,13 @@ header {
 }
 
 footer {
-    position:relative;
     margin-left: 320px;
     margin-right: 320px;
-    width:100vw;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    width:1280px;
     height:160px;
-    top:3179px;
 }
 
 button {

@@ -25,7 +25,7 @@
 .headerContent {
     position: absolute;
     display: flex;
-    height: 900px;
+    height: 798px;
     width:1280px;
     margin-left: 320px;
     margin-right: 320px;
@@ -107,7 +107,6 @@
 
 .headingP2 {
     font-family: 'Pretendard-Regular';
-    margin-bottom: 40px;
     width: 420px;
     height: 86px;
     font-size: 16px;

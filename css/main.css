@@ -1,31 +1,46 @@
 /* Main 스타일 */
 
+.mainFirstArea {
+    margin-top: 80px;
+    width: 1280px;
+    justify-content: space-between;
+    gap:110px;
+    display: flex;
+    flex-direction:row;
+}
+
+.mainP1Area {
+    margin-top: 92px;
+    width: 510px;
+    height:205px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+
 /* Main 이미지 설정 */
 
 .imgMainCat {
-    position:absolute;
     height: 390px;
     width: 660px;
-    top: 80px;
     border-radius: 30px;
 }
 .mainImgLine1 {
-    position: absolute;
-    width:1278px;
-    height:378px;
-    top:820px;
+    width:1280px;
+    height:828px;
+    margin-top:88px;
     display: grid;
-    grid-template-columns: auto auto auto;
-    gap:72px;
+    grid-template-columns: 378px 378px 378px;
+    grid-gap:72px;
 }
 .mainImgLine2 {
-    position: absolute;
-    width:1278px;
-    height:378px;
-    top:1720px;
+    width:1280px;
+    height:828px;
+    margin-top:72px;
     display: none;
     grid-template-columns: auto auto auto;
-    gap:72px;
+    grid-gap:72px;
 }
 
 .lineImg {
@@ -35,7 +50,7 @@
 }
 
 .mainEmailImg {
-    position:absolute;
+    position: absolute;
     width:24px;
     height: 24px;
     top: 18px;
@@ -43,21 +58,15 @@
 }
 
 .mainBackgroundCatImg {
-    position:absolute;
     z-index: -1;
     width: 100%;
     height:340px;
-    left:-320px;
-    top:2839px;
 }
 
 /* 메인 부분 텍스트 설정 */
 
 .mainP1 {
-    position:absolute;
     font-family: 'Pretendard-Bold';
-    top: 172px;
-    left: 770px;
     width:510px;
     height: 135px;
     font-size:36px;
@@ -65,21 +74,16 @@
 }
 
 .mainP2 {
-    position:absolute;
     font-family: 'Pretendard-Regular';
-    top: 337px;
-    left: 770px;
     width:510px;
     height:40px;
     font-size: 16px;
     line-height: 20px;
 }
 .mainP3 {
-    position:absolute;
     font-family: 'Pretendard-Regular';
-    top: 690px;
-    left: 285px;
-    width:710px;
+    margin-top: 40px;
+    width:1280px;
     height: 42px;
     font-size: 16px;
     line-height: 20px;
@@ -92,20 +96,18 @@
 }
 
 .mainP4 {
-    position: absolute;
     width:263px;
     height: 45px;
-    top: 2005px;
+    margin-top: 68px;
     font-family: 'Pretendard-Bold';
     font-size: 36px;
     line-height: 45px;
 }
 
 .mainP5 {
-    position:absolute;
     width: 395px;
     height: 20px;
-    top: 2070px;
+    margin-top: 20px;
     font-family: 'Pretendard-Regular';
     font-weight: 500;
     font-size: 16px;
@@ -114,28 +116,25 @@
 }
 
 .mainPContinue {
-    position: absolute;
-    width: 290px;
-    height:108px;
-    top:1748px;
-    left:495px;
+    width: 1280px;
+    height:110px;
+    margin-top:100px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     font-family: 'Pretendard-Regular';
     font-size: 24px;
     font-weight: 700;
     line-height: 30px;
     text-align: center;
-    gap:28px;
+    align-items: center;
 }
 
 
 .mainHead {
-    position:absolute;
     font-family: 'Pretendard-Bold';
-    top: 590px;
-    left: 203px;
-    width:875px;
+    margin-top: 120px;
+    width:1280px;
     height: 60px;
     font-size: 46px;
     line-height: 60px;
@@ -146,11 +145,8 @@
 /* 기타 메인 설정 */
 
 .continueButton {
-    position:absolute;
     width: 140px;
     height: 50px;
-    top:58px;
-    left:73.5px;
     border-radius: 40px;
     background-color: #D97652;
     border: none;
@@ -172,17 +168,15 @@
 
 
 .mainLine {
-    position: absolute;
-    width:1278px;
+    width:1280px;
     height: 1px;
-    top: 1936px;
+    margin-top: 80px;
     background-color:#C4C4C4;
 }
 
 .mainMaps{
-    position:absolute;
     z-index:0;
-    top:2138px;
+    margin-top:48px;
     width:1278px;
     height:520px;
 }
@@ -191,27 +185,26 @@
 /* 메인 SubScribe */
 
 .mainSubscribeArea {
-    position:absolute;
+    position: relative;
     width: 1280px;
     height:201px;
-    top: 2738px;
+    display: flex;
+    top:100px;
+    justify-content: space-between;
     background-color: #263140;
     border-radius: 30px;
 }
 
 .mainSubscribeEmail {
-    position:absolute;
-    display: flex;
+    position: relative;
     width:530px;
     height:60px;
-    top: 70px;
-    left:692px;
     border-radius: 60px;
     background-color: white;
 }
 
 .mainSubscribeButton{
-    position:absolute;
+    position: absolute;
     width: 135px;
     height: 50px;
     top:5px;
@@ -223,12 +216,12 @@
 }
 
 .mainSubscribeInput {
-    position:absolute;
+    position: absolute;
     font-family: 'Pretendard-Regular';
     width: 290px;
     height: 20px;
-    top: 20px;
-    left: 68px;
+    top:20px;
+    left:68px;
     font-size: 16px;
     line-height: 20px;
     color: #767676;
@@ -236,12 +229,25 @@
     outline: none;
 }
 
+.mainSubText {
+    width: 471px;
+    height: 99px;
+    margin-top: 51px;
+    margin-left: 58px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainSubEmailArea {
+    width:588px;
+    height:inherit;
+    align-content: center;
+}
+
 .mainSubscribeHead {
-    position:absolute;
     width:448px;
     height:45px;
-    top: 50px;
-    left: 58px;
     font-family: 'Pretendard-Bold';
     font-size:36px;
     line-height: 45px;
@@ -249,7 +255,6 @@
 }
 
 .mainSubscribeDetails {
-    position:absolute;
     width:471px;
     height:36px;
     top: 113px;

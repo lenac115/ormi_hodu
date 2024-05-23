@@ -2,14 +2,12 @@
 /* footer 관련 설정 */
 
 .footerLogo {
-    position:absolute;
     width: 226px;
     height: 70px;
     top: 45px;
 }
 
 .footerIconGroup{
-    position:relative;
     width:228px;
     height:42px;
     top:58px;
