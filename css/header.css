@@ -1,46 +1,66 @@
 /* 헤더 CSS */
 
 .navbar {
-    position: relative;
+    justify-content: space-between;
+    display: flex;
+    column-gap: 750px;
     height : 102px;
     width: 1280px;
     margin-left: 320px;
     margin-right: 320px;
 }
 
+.textButton {
+    height:inherit;
+    width:395px;
+    display: flex;
+}
+
+.ButtonWhere {
+    width:145px;
+    height:inherit;
+    align-content: center;
+}
+
 .headerContent {
-    position: relative;
+    position: absolute;
+    display: flex;
     height: 900px;
     width:1280px;
     margin-left: 320px;
     margin-right: 320px;
 }
 
+.headerMain {
+    width: 695px;
+    height: 336px;
+    margin-top:200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:40px;
+}
+
 /* 헤더 이미지 설정 */
 
 .imgLogo {
-    position:absolute;
-    height : 40px;
+    height: inherit;
     width : 130px;
-    top : 31px;
+    align-content: center;
 }
 
 .imgCat {
-    position:absolute;
     height: 766px;
     width: 415px;
-    top: 32px;
-    left: 865px;
+    margin-left:170px;
+    margin-top: 32px;
 }
 
 /* 헤더 버튼 설정 */
 
 .downloadButton1 {
-    position:absolute;
     width: 140px;
     height: 50px;
-    top:26px;
-    left:1140px;
     border-radius: 40px;
     background-color: #D97652;
     border: none;
@@ -48,10 +68,8 @@
 }
 
 .downloadButton2 {
-    position:absolute;
     width: 140px;
     height: 50px;
-    top:486px;
     border-radius: 40px;
     background-color: #D97652;
     border: none;
@@ -68,22 +86,19 @@
 /* 헤더 부분 텍스트 설정 위에서부터 아래쪽으로 순차적으로 진행 */
 
 .textBack {
-    position:absolute;
     width : 205px;
-    height : 20px;
-    top: 41px;
-    left: 886px;
+    height : inherit;
     display: flex;
     gap:30px;
+    align-items: center;
     font-family: 'Pretendard-Regular';
+    margin-right: 50px;
     font-size: 16px;
     line-height: 20px;
 }
 
 .headingP1 {
-    position:absolute;
     font-family: 'Pretendard-Bold';
-    top: 200px;
     width: 695px;
     height: 120px;
     font-size: 47px;
@@ -91,9 +106,8 @@
 }
 
 .headingP2 {
-    position:absolute;
     font-family: 'Pretendard-Regular';
-    top: 360px;
+    margin-bottom: 40px;
     width: 420px;
     height: 86px;
     font-size: 16px;
