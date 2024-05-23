@@ -2,8 +2,8 @@
 const modal = document.querySelector('.mainSubscribeModalBack');
 const emailModal = document.querySelector('.mainSubscribeInput');
 const line = document.querySelector('.mainImgLine2');
-const btnShow = document.getElementById('btnContinue');
-const btnText = document.getElementById('btnShow');
+const btnArea = document.querySelector('.mainPContinue');
+const btnClose = document.querySelector('.closeButton');
 const sub = document.querySelector('.mainSubscribeArea');
 const p4 = document.querySelector('.mainP4');
 const p5 = document.querySelector('.mainP5');
@@ -36,8 +36,8 @@ function showOn() {
     continued.style.top = '2648px';
     mainline.style.top = '2836px';
     line.style.display = 'grid';
-    btnText.innerText = 'Close';
-    btnShow.style.color = 'white';
+    btnArea.style.display = 'none';
+    btnClose.style.display = 'block';
 }
 function showOff() {
     sub.style.top = '2738px';
@@ -49,31 +49,28 @@ function showOff() {
     continued.style.top = '1748px';
     mainline.style.top = '1936px';
     line.style.display = 'none';
-    btnText.innerText = 'Show more';
-    btnShow.style.color = 'black';
+    btnArea.style.display = 'block';
+    btnClose.style.display = 'none';
 }
 
 const btnOpenModal = document.querySelector(".mainSubscribeButton");
 const btnOffModal = document.querySelector(".mainSubscribeModalButton");
-const btnOnoffShow = document.querySelector('.continueButton');
+const btnOnShow = document.querySelector('.continueButton');
+const btnOffShow = document.querySelector('.closeButton');
 
 btnOpenModal.addEventListener("click", () => modalOn());
 btnOffModal.addEventListener("click", () => modalOff());
-btnOnoffShow.addEventListener("click",function() {
-    if(isShowOn()){
-        showOff();
-    }else {
-        showOn();
-    }
-});
+btnOnShow.addEventListener("click", ()=> showOn());
+btnOffShow.addEventListener("click", ()=> showOff());
 
-    var container = document.getElementById('map');
-    var options = {
+
+var container = document.getElementById('map');
+var options = {
     center: new kakao.maps.LatLng(33.442305251086964 , 126.57150377498742 ),
     level: 2
 };
 
-    var map = new kakao.maps.Map(container, options);
+var map = new kakao.maps.Map(container, options);
 
 // 지도를 클릭한 위치에 표출할 마커입니다
 var marker = new kakao.maps.Marker({
