@@ -4,14 +4,6 @@ const emailModal = document.querySelector('.mainSubscribeInput');
 const line = document.querySelector('.mainImgLine2');
 const btnArea = document.querySelector('.mainPContinue');
 const btnClose = document.querySelector('.closeButton');
-const sub = document.querySelector('.mainSubscribeArea');
-const p4 = document.querySelector('.mainP4');
-const p5 = document.querySelector('.mainP5');
-const maps = document.querySelector('.mainMaps');
-const back = document.querySelector('.mainBackgroundCatImg');
-const foot = document.querySelector('footer');
-const mainline = document.querySelector('.mainLine');
-const continued = document.querySelector('.mainPContinue');
 
 function isModalOn() {
     return modal.style.display === 'flex';
@@ -27,29 +19,14 @@ function modalOff() {
     modal.style.display = 'none';
 }
 function showOn() {
-    sub.style.top = '3638px';
-    p4.style.top = '2905px';
-    p5.style.top = '2970px';
-    maps.style.top = '3038px';
-    back.style.top = '3739px';
-    foot.style.top = '4079px';
-    continued.style.top = '2648px';
-    mainline.style.top = '2836px';
     line.style.display = 'grid';
     btnArea.style.display = 'none';
     btnClose.style.display = 'block';
+
 }
 function showOff() {
-    sub.style.top = '2738px';
-    p4.style.top = '2005px';
-    p5.style.top = '2070px';
-    maps.style.top = '2138px';
-    back.style.top = '2839px';
-    foot.style.top = '3179px';
-    continued.style.top = '1748px';
-    mainline.style.top = '1936px';
     line.style.display = 'none';
-    btnArea.style.display = 'block';
+    btnArea.style.display = 'flex';
     btnClose.style.display = 'none';
 }
 
@@ -84,3 +61,27 @@ var mapTypeControl = new kakao.maps.MapTypeControl();
 map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
 var zoomControl = new kakao.maps.ZoomControl();
 map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
+
+const page = Math.floor(Math.random()*101);
+imageCreate(page);
+
+async function imageCreate(page) {
+    try {
+        const response = await fetch(`https://picsum.photos/v2/list?page=${page}&limit=6`);
+        if(!response.ok){
+            throw new Error('네트워크에 이상이 있습니다.');
+        }
+
+        const images = await response.json();
+        makeListElement(images);
+    } catch(error) {
+        throw new Error(error);
+    }
+}
+
+function makeListElement(images) {
+    images.forEach((image) =>{
+        console.log(image.download_url);
+        line.insertAdjacentHTML('beforeend', `<img src="${image.download_url}" class="lineImg" alt="${image.index + 1}번째 랜덤 사진입니다"/>`);
+    });
+}

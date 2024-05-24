@@ -14,7 +14,7 @@
 /* 태그 선택자 설정 */
 body {
     margin: 0;
-    /*overflow-x: hidden;*/
+    overflow-x: hidden;
 }
 
 main {
