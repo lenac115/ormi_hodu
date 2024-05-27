@@ -2,13 +2,17 @@
 
 const modal = document.querySelector('.modalSec');
 const email = document.querySelector('.subsInput');
-const imageLine = document.querySelector('.imgLine2');
-const btnArea = document.querySelector('.contSec');
-const btnClose = document.querySelector('.btnClose');
+const imageLine = document.querySelector('.imgLine');
 const btnScroll =  document.querySelector('.btnUp');
 
 // modal 버튼 눌린 경우
 function modalOn() {
+    if(!email.checkValidity(email.value)){
+        email.value = '';
+        return alert("이메일 형식으로 작성되어야 합니다.");
+    } else if(email.value === '') {
+        return alert("이메일을 작성해주세요.");
+    }
     modal.style.display = 'flex';
     email.value = '';
 }
@@ -20,17 +24,12 @@ function modalOff() {
 
 // 이미지 추가 렌더링 버튼을 누른 경우
 function showOn() {
-    imageLine.style.display = 'grid';
-    btnArea.style.display = 'none';
-    btnClose.style.display = 'block';
 
-}
+    // 이미지 랜덤 생성 난수
+    const page = Math.floor(Math.random()*101);
 
-// 추가 이미지를 닫은 경우
-function showOff() {
-    imageLine.style.display = 'none';
-    btnArea.style.display = 'flex';
-    btnClose.style.display = 'none';
+    // 이미지 리스트 생성
+    imageCreate(page);
 }
 
 // scroll을 top까지 올리는 버튼을 누른 경우
@@ -57,15 +56,13 @@ function scrollOn() {
 const btnOpenModal = document.querySelector(".btnSubs");
 const btnOffModal = document.querySelector(".btnModal");
 const btnOnShow = document.querySelector('.btnContinue');
-const btnOffShow = document.querySelector('.btnClose');
 
 // modal을 열고 닫는 이벤트
 btnOpenModal.addEventListener("click", () => modalOn());
 btnOffModal.addEventListener("click", () => modalOff());
 
-// 이미지를 추가적으로 불러오는 버튼을 열고 닫는 이벤트
+// 이미지를 추가적으로 불러오는 버튼을 클릭했을 때 발생하는 이벤트
 btnOnShow.addEventListener("click", ()=> showOn());
-btnOffShow.addEventListener("click", ()=> showOff());
 
 // 스크롤을 홈페이지의 시작으로 되돌리는 버튼을 눌렀을 때의 이벤트
 btnScroll.addEventListener("click", () => scrollUp());
@@ -100,13 +97,6 @@ map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
 var zoomControl = new kakao.maps.ZoomControl();
 map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
 
-// 이미지 랜덤 생성 난수
-const page = Math.floor(Math.random()*101);
-
-// 이미지 리스트 생성
-imageCreate(page);
-
-
 async function imageCreate(page) {
     try {
         const response = await fetch(`https://picsum.photos/v2/list?page=${page}&limit=6`);
@@ -128,6 +118,6 @@ async function imageCreate(page) {
 function makeListElement(images) {
     images.forEach((image) =>{
         console.log(image.download_url);
-        imageLine.insertAdjacentHTML('beforeend', `<img src="${image.download_url}" class="imgElement" alt="${image.index + 1}번째 랜덤 사진입니다"/>`);
+        imageLine.insertAdjacentHTML('beforeend', `<img src="${image.download_url}" class="imgElement" alt="랜덤 사진입니다"/>`);
     });
 }

@@ -48,25 +48,16 @@
     border-radius: 30px;
 }
 
-/* 고양이 이미지 6개 그리드로 나열 */
-.imgLine1 {
+/* 이미지 그리드로 나열 */
+.imgLine {
     width:1280px;
-    height:828px;
+    min-height:828px;
     margin-top:88px;
     display: grid;
     grid-template-columns: 378px 378px 378px;
     grid-gap:72px;
 }
 
-/* show more시 그리드로 나열 */
-.imgLine2 {
-    width:1280px;
-    height:828px;
-    margin-top:72px;
-    display: none;
-    grid-template-columns: auto auto auto;
-    grid-gap:72px;
-}
 
 /* imgLine의 이미지들의 크기와 테두리 설정 */
 .imgElement {
@@ -86,6 +77,7 @@
 
 /* subs의 뒤에 있는 큰 고양이 배경 */
 .mainBackgroundCatImg {
+    position:relative;
     z-index: -1;
     width: 100%;
     height:340px;
@@ -186,19 +178,6 @@
     border-radius: 40px;
     background-color: #D97652;
     border: none;
-    font-family: 'Pretendard-Regular';
-}
-
-/* 추가 이미지 영역의 close 버튼 */
-.btnClose {
-    width: 140px;
-    height: 50px;
-    margin-top: 100px;
-    margin-left: 568.5px;
-    border-radius: 40px;
-    background-color: #D97652;
-    border: none;
-    display: none;
     font-family: 'Pretendard-Regular';
 }
 

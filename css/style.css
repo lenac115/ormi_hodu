@@ -10,11 +10,15 @@
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
     font-weight: 700;
 }
+*{
+    margin:0;
+    padding: 0;
+}
 
 /* 태그 선택자 설정 */
 body {
-    margin: 0;
     overflow-x: hidden;
+    overflow-y: auto;
 }
 
 main {
