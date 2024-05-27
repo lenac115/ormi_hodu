@@ -73,13 +73,6 @@ window.addEventListener('scroll', () => scrollOff());
 // 스크롤이 끝나고 홈페이지의 맨위로 올라가게 하는 버튼을 나타나게 하는 이벤트
 window.addEventListener('scrollend', () => scrollOn());
 
-const scrollTop = $(window).scrollTop();
-if(scrollTop()) {
-    scrollOff();
-}
-
-
-
 
 // 카카오 map 관련 코드
 
