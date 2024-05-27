@@ -7,12 +7,14 @@ const btnScroll =  document.querySelector('.btnUp');
 
 // modal 버튼 눌린 경우
 function modalOn() {
+
     if(!email.checkValidity(email.value)){
         email.value = '';
         return alert("이메일 형식으로 작성되어야 합니다.");
     } else if(email.value === '') {
         return alert("이메일을 작성해주세요.");
     }
+
     modal.style.display = 'flex';
     email.value = '';
 }
@@ -70,6 +72,12 @@ btnScroll.addEventListener("click", () => scrollUp());
 window.addEventListener('scroll', () => scrollOff());
 // 스크롤이 끝나고 홈페이지의 맨위로 올라가게 하는 버튼을 나타나게 하는 이벤트
 window.addEventListener('scrollend', () => scrollOn());
+
+const scrollTop = $(window).scrollTop();
+if(scrollTop()) {
+    scrollOff();
+}
+
 
 
 
