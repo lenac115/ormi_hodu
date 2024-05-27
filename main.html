@@ -9,21 +9,26 @@
     <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
-    <header class = "headerCls">
+<!--
+헤더 영역
+로고, 링크 모음, 다운로드 버튼이 있는 nav 영역
+헤더 부분에 들어갈 단락 두개와 이미지로 이루어진 headerContent 영역
+-->
+    <header class>
 
         <nav class="navbar">
             <div class="imgLogo">
                 <img src="img/Logo-fin.png" alt="hodu 로고 이미지입니다."/>
             </div>
             <div class="textButton">
-                <span class="textBack">
-                    <a href="" target="_self">Home</a>
-                    <a href="" target="_self">About</a>
-                    <a href="" target="_self">Support</a>
-                </span>
-                <div class="ButtonWhere">
+                <ul class="navList">
+                    <li><a href="" target="_self">Home</a></li>
+                    <li><a href="" target="_self">About</a></li>
+                    <li><a href="" target="_self">Support</a></li>
+                </ul>
+                <div class="btnDown1Sec">
                     <a href="img/img_5%20(1).png" download="">
-                        <button class="downloadButton1">
+                        <button class="btnDown1">
                             <span class="buttonText">
                                 Download
                             </span>
@@ -33,20 +38,20 @@
             </div>
         </nav>
 
-        <div class="headerContent">
+        <section class="headerContent">
             <div class="headerMain">
-                <div class="headingP1">
+                <p class="headP1">
                     Lorem Ipsum is simply<br>
                     dummy text of the printing and
-                </div>
-                <div class="headingP2">
+                </p>
+                <p class="headP2">
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry.<br>
                     Lorem Ipsum has been the industry's standard dummy text
                     ever since the 1500s, when an unknown
-                </div>
+                </p>
                 <a href="img/img_5%20(1).png" download="">
-                    <button class="downloadButton2">
+                    <button class="btnDown2">
                         <span class="buttonText">
                             Download
                         </span>
@@ -54,109 +59,122 @@
                 </a>
             </div>
             <img src="img/고양이%201.png" alt="hodu 고양이 전신 사진입니다." class="imgCat"/>
-        </div>
+        </section>
     </header>
 
+<!--
+main 영역
+첫번째, 두번째 내용 단락 묶음과 이미지를 6개씩 그리드 형식으로 렌더링하는 영역 두개, 카카오 맵 영역 그리고 subscribe와 modal 영역에 대한 html
+-->
     <main>
-        <div class="mainFirstArea">
-            <img src="img/img_4.png" alt="main의 첫 고양이 사진입니다" class="imgMainCat"/>
+        <section class="firstPSec">
+            <img src="img/img_4.png" alt="main의 첫 고양이 사진입니다" class="imgBigCat"/>
             <div class="mainP1Area">
-                <div class="mainP1">
+                <p class="mainHead1">
                     Lorem Ipsum is simply<br>
                     dummy text of the printing and dummy text
-                </div>
-                <div class="mainP2">
+                </p>
+                <p class="mainP1">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                </div>
+                </p>
             </div>
-        </div>
-        <div class="mainHead">
-            dummy text of the printing and dummy
-        </div>
-        <div class="mainP3">
-            Lorem Ipsum is simply <span class="mainP3Dummy">dummy text</span> of the printing and typesetting industry.<br>
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-        </div>
+        </section>
 
-        <div class="mainImgLine1">
-            <img src="img/imgline1-1.png" alt="첫번째 고양이 이미지 라인의 첫번째 이미지입니다." class="lineImg"/>
-            <img src="img/imgline1-2.png" alt="첫번째 고양이 이미지 라인의 두번째 이미지입니다." class="lineImg"/>
-            <img src="img/imgline1-3.png" alt="첫번째 고양이 이미지 라인의 세번째 이미지입니다." class="lineImg"/>
-            <img src="img/imgline2-1.png" alt="두번째 고양이 이미지 라인의 첫번째 이미지입니다." class="lineImg"/>
-            <img src="img/imgline2-2.png" alt="두번째 고양이 이미지 라인의 두번째 이미지입니다." class="lineImg"/>
-            <img src="img/imgline2-3.png" alt="두번째 고양이 이미지 라인의 세번째 이미지입니다." class="lineImg"/>
-        </div>
-        <div class="mainImgLine2">
-            <!--<img src="https://picsum.photos/378?random=1" alt="추가 랜덤 사진입니다." class="lineImg"/>
-            <img src="https://picsum.photos/378?random=2" alt="숨겨진 세번째 고양이 라인의 두번째 이미지입니다." class="lineImg"/>
-            <img src="https://picsum.photos/378?random=3" alt="숨겨진 세번째 고양이 라인의 세번째 이미지입니다." class="lineImg"/>
-            <img src="https://picsum.photos/378?random=4" alt="숨겨진 네번째 고양이 라인의 첫번째 이미지입니다." class="lineImg"/>
-            <img src="https://picsum.photos/378?random=5" alt="숨겨진 네번째 고양이 라인의 두번째 이미지입니다." class="lineImg"/>
-            <img src="https://picsum.photos/378?random=6" alt="숨겨진 네번째 고양이 라인의 세번째 이미지입니다." class="lineImg"/>-->
+        <section class="secondPSec">
+            <p class="mainHead2">
+                dummy text of the printing and dummy
+            </p>
+            <p class="mainP2">
+                Lorem Ipsum is simply <span class="mainP2Dummy">dummy text</span> of the printing and typesetting industry.<br>
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+            </p>
+        </section>
+
+        <ul class="imgLine1">
+            <li><img src="img/imgline1-1.png" alt="첫번째 고양이 이미지 라인의 첫번째 이미지입니다." class="imgElement"/></li>
+            <li><img src="img/imgline1-2.png" alt="첫번째 고양이 이미지 라인의 첫번째 이미지입니다." class="imgElement"/></li>
+            <li><img src="img/imgline1-3.png" alt="첫번째 고양이 이미지 라인의 첫번째 이미지입니다." class="imgElement"/></li>
+            <li><img src="img/imgline2-1.png" alt="첫번째 고양이 이미지 라인의 첫번째 이미지입니다." class="imgElement"/></li>
+            <li><img src="img/imgline2-2.png" alt="첫번째 고양이 이미지 라인의 첫번째 이미지입니다." class="imgElement"/></li>
+            <li><img src="img/imgline2-3.png" alt="첫번째 고양이 이미지 라인의 첫번째 이미지입니다." class="imgElement"/></li>
+        </ul>
+        <div class="imgLine2">
 
         </div>
 
-        <div class="mainPContinue" id="btnContinue">
+        <section class="contSec">
             Continue exploring HODU
-            <button class="continueButton">
+            <button class="btnContinue">
                 <span class="buttonText">Show more</span>
             </button>
-        </div>
-        <button class="closeButton">
+        </section>
+        <button class="btnClose">
             <span class="buttonText">Close</span>
         </button>
 
-        <div class="mainLine">
+        <div class="line">
         </div>
 
-        <div class="mainP4">
-            Where you'll be
-        </div>
-        <div class="mainP5">
-            330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea
-        </div>
-        <div id="map" class="mainMaps"></div>
+        <section class="mapSec">
+            <div>
+                <p class="mainP3">
+                    Where you'll be
+                </p>
+                <p class="mainP4">
+                    330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea
+                </p>
+            </div>
+            <div id="map" class="maps"></div>
+        </section>
 
 
-        <div class="mainSubscribeArea">
-            <div class="mainSubText">
-                <div class="mainSubscribeHead">
+        <section class="subsSec">
+            <div class="subsText">
+                <p class="subsHead">
                     Subscribe to our Blog post
-                </div>
-                <div class="mainSubscribeDetails">
+                </p>
+                <p class="subsDetails">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
                     Lorem Ipsum has been the industry's standard dummy text
-                </div>
+                </p>
             </div>
-            <div class="mainSubEmailArea">
-                <div class="mainSubscribeEmail">
+            <div class="subsEmailArea">
+                <div class="subsEmail">
                     <label for="email">
                         <img src="img/mail.png" class="mainEmailImg" alt="Subscribe의 Email 작성창의 Email 마크입니다."/>
                     </label>
-                    <input type="text" id="email" placeholder="Enter your e-mail address" class="mainSubscribeInput"/>
+                    <input type="text" id="email" placeholder="Enter your e-mail address" class="subsInput"/>
 
-                    <button type="reset" class="mainSubscribeButton">
+                    <button type="reset" class="btnSubs">
                         <span class="buttonText">Subscribe</span>
                     </button>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="mainSubscribeModalBack">
-            <div class="mainSubscribeModalBody">
+        <section class="modalSec">
+            <div class="modalBody">
                 <img src="img/modalBack.png" style="border-radius: 40px" alt="Subscribe 후 나오는 Modal의 배경입니다."/>
-                <img src="img/modalCat.png" class="mainSubscribeModalCat" alt="Subscribe 후 나오는 Modal의 고양이 사진입니다."/>
-                <span class="mainSubscribeModalText1">Thank You!</span>
-                <span class="mainSubscribeModalText2">Lorem Ipsum is simply dummy text of the printing industry.</span>
-                <button class="mainSubscribeModalButton">
+                <img src="img/modalCat.png" class="modalCat" alt="Subscribe 후 나오는 Modal의 고양이 사진입니다."/>
+                <span class="modalText1">Thank You!</span>
+                <span class="modalText2">Lorem Ipsum is simply dummy text of the printing industry.</span>
+                <button class="btnModal">
                     <span class="buttonText">OK! I Love HODU</span>
                 </button>
             </div>
-        </div>
+        </section>
     </main>
     <div class="mainBackgroundCatImg">
         <img src="img/backgroundCat.png" alt="메인의 배경의 반투명 고양이 사진입니다."/>
     </div>
+    <button class="btnUp">
+        <img src="img/scroll-top-btn.png" alt="호버 기능이 있는 스크롤 버튼입니다"/>
+    </button>
+
+<!--
+footer 영역
+로고와 아이콘 그룹에 대한 html
+-->
     <footer>
         <img src="img/Logo-fin.png" class="footerLogo" alt="footer의 Hodu 로고 이미지입니다."/>
         <div class="footerIconGroup">

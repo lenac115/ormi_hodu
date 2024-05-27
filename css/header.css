@@ -1,5 +1,6 @@
 /* 헤더 CSS */
 
+/* 네비게이션 바 영역 설정 */
 .navbar {
     justify-content: space-between;
     display: flex;
@@ -10,20 +11,22 @@
     margin-right: 320px;
 }
 
+/* navbar 내부의 맨 위 링크와 다운로드 버튼에 대한 영역 */
 .textButton {
     height:inherit;
     width:395px;
     display: flex;
 }
 
-.ButtonWhere {
+/* 네비게이션 바의 다운로드 버튼의 영역 표기 중앙으로 정렬하여 렌더링 */
+.btnDown1Sec {
     width:145px;
     height:inherit;
     align-content: center;
 }
 
+/* 헤더의 콘텐츠 영역 */
 .headerContent {
-    position: absolute;
     display: flex;
     height: 798px;
     width:1280px;
@@ -31,6 +34,7 @@
     margin-right: 320px;
 }
 
+/* 헤더의 글 전체 영역 */
 .headerMain {
     width: 695px;
     height: 336px;
@@ -43,12 +47,14 @@
 
 /* 헤더 이미지 설정 */
 
+/* 호두 로고 */
 .imgLogo {
     height: inherit;
     width : 130px;
     align-content: center;
 }
 
+/* 헤더의 호두 사진 */
 .imgCat {
     height: 766px;
     width: 415px;
@@ -57,8 +63,8 @@
 }
 
 /* 헤더 버튼 설정 */
-
-.downloadButton1 {
+/* 네비게이션 바의 다운로드 버튼 */
+.btnDown1 {
     width: 140px;
     height: 50px;
     border-radius: 40px;
@@ -67,7 +73,8 @@
     font-family: 'Pretendard-Regular';
 }
 
-.downloadButton2 {
+/* 헤더 콘텐츠 부분의 다운로드 버튼 */
+.btnDown2{
     width: 140px;
     height: 50px;
     border-radius: 40px;
@@ -75,6 +82,7 @@
     border: none;
 }
 
+/* 버튼에 들어갈 공통적인 폰트 설정 */
 .buttonText {
     color:white;
     font-size:16px;
@@ -84,8 +92,8 @@
 }
 
 /* 헤더 부분 텍스트 설정 위에서부터 아래쪽으로 순차적으로 진행 */
-
-.textBack {
+/* 네비게이션 바의 링크 리스트 */
+.navList {
     width : 205px;
     height : inherit;
     display: flex;
@@ -97,15 +105,16 @@
     line-height: 20px;
 }
 
-.headingP1 {
+/* 헤더 콘텐츠의 첫 단락 */
+.headP1 {
     font-family: 'Pretendard-Bold';
     width: 695px;
     height: 120px;
     font-size: 47px;
     line-height: 60px;
 }
-
-.headingP2 {
+/* 헤더 콘텐츠의 두번째 단락 */
+.headP2 {
     font-family: 'Pretendard-Regular';
     width: 420px;
     height: 86px;

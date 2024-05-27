@@ -50,3 +50,14 @@ footer {
 button {
     cursor: pointer;
 }
+
+p {
+    margin:0;
+}
+
+ul {
+    margin-bottom: 0px;
+    margin-top:0px;
+    padding:0px;
+    list-style: none;
+}

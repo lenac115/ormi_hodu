@@ -1,6 +1,7 @@
 /* Main 스타일 */
 
-.mainFirstArea {
+/* mainP1, mainP2, imgBigCat을 배치하기 위해 만든 섹션 */
+.firstPSec {
     margin-top: 80px;
     width: 1280px;
     justify-content: space-between;
@@ -9,6 +10,24 @@
     flex-direction:row;
 }
 
+/* mainHead와 mainP3을 배열하기 위한 섹션 */
+.secondPSec {
+    margin-top: 120px;
+    width: 875px;
+    height:140px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 위치 정보가 나와있는, mainP4와 mainP5 그리고 지도를 배열하기 위한 섹션 */
+.mapSec {
+    width: 1280px;
+    height: 653px;
+    margin-top: 68px;
+}
+
+/* P1 섹션의 제목과 본문의 위치를 조정하기 위한 div 설정 */
 .mainP1Area {
     margin-top: 92px;
     width: 510px;
@@ -19,14 +38,18 @@
     gap:30px;
 }
 
+
 /* Main 이미지 설정 */
 
-.imgMainCat {
+/* P1 섹션의 큰 고양이 이미지 */
+.imgBigCat {
     height: 390px;
     width: 660px;
     border-radius: 30px;
 }
-.mainImgLine1 {
+
+/* 고양이 이미지 6개 그리드로 나열 */
+.imgLine1 {
     width:1280px;
     height:828px;
     margin-top:88px;
@@ -34,7 +57,9 @@
     grid-template-columns: 378px 378px 378px;
     grid-gap:72px;
 }
-.mainImgLine2 {
+
+/* show more시 그리드로 나열 */
+.imgLine2 {
     width:1280px;
     height:828px;
     margin-top:72px;
@@ -43,12 +68,14 @@
     grid-gap:72px;
 }
 
-.lineImg {
+/* imgLine의 이미지들의 크기와 테두리 설정 */
+.imgElement {
     width:378px;
     height: 378px;
     border-radius: 30px;
 }
 
+/* subs의 메일 작성 부분 앞의 편지모양 아이콘 */
 .mainEmailImg {
     position: absolute;
     width:24px;
@@ -57,6 +84,7 @@
     left:28px;
 }
 
+/* subs의 뒤에 있는 큰 고양이 배경 */
 .mainBackgroundCatImg {
     z-index: -1;
     width: 100%;
@@ -65,7 +93,8 @@
 
 /* 메인 부분 텍스트 설정 */
 
-.mainP1 {
+/* firstPsec의 첫번째 제목 단락 */
+.mainHead1 {
     font-family: 'Pretendard-Bold';
     width:510px;
     height: 135px;
@@ -73,16 +102,30 @@
     line-height: 45px;
 }
 
-.mainP2 {
+/* secondPSec의 두번째 제목 단락 */
+.mainHead2 {
+    font-family: 'Pretendard-Bold';
+    width:1280px;
+    height: 60px;
+    font-size: 46px;
+    line-height: 60px;
+    text-align: center;
+    color: #D97652;
+}
+
+/* firstPsec의 내용 단락 */
+.mainP1 {
     font-family: 'Pretendard-Regular';
     width:510px;
     height:40px;
     font-size: 16px;
     line-height: 20px;
 }
-.mainP3 {
+
+/* secondPsec의 내용 단락 */
+.mainP2 {
     font-family: 'Pretendard-Regular';
-    margin-top: 40px;
+
     width:1280px;
     height: 42px;
     font-size: 16px;
@@ -90,21 +133,23 @@
     text-align: center;
 }
 
-.mainP3Dummy {
+/* second의 폰트가 다른 부분의 설정 */
+.mainP2Dummy {
     font-family: 'Pretendard-Bold';
     color: #D97652;
 }
 
-.mainP4 {
+/* mapSec의 첫번째 단락 */
+.mainP3 {
     width:263px;
     height: 45px;
-    margin-top: 68px;
     font-family: 'Pretendard-Bold';
     font-size: 36px;
     line-height: 45px;
 }
 
-.mainP5 {
+/* mapSec의 두번째 단락 */
+.mainP4 {
     width: 395px;
     height: 20px;
     margin-top: 20px;
@@ -115,7 +160,8 @@
     color: #606367;
 }
 
-.mainPContinue {
+/* Show more 버튼의 위 글과 버튼의 영역 */
+.contSec {
     width: 1280px;
     height:110px;
     margin-top:100px;
@@ -131,20 +177,10 @@
 }
 
 
-.mainHead {
-    font-family: 'Pretendard-Bold';
-    margin-top: 120px;
-    width:1280px;
-    height: 60px;
-    font-size: 46px;
-    line-height: 60px;
-    text-align: center;
-    color: #D97652;
-}
-
 /* 기타 메인 설정 */
 
-.continueButton {
+/* show more 버튼 */
+.btnContinue {
     width: 140px;
     height: 50px;
     border-radius: 40px;
@@ -153,7 +189,8 @@
     font-family: 'Pretendard-Regular';
 }
 
-.closeButton {
+/* 추가 이미지 영역의 close 버튼 */
+.btnClose {
     width: 140px;
     height: 50px;
     margin-top: 100px;
@@ -165,25 +202,50 @@
     font-family: 'Pretendard-Regular';
 }
 
-
-.mainLine {
+/* 중간의 밑줄 */
+.line {
     width:1280px;
     height: 1px;
     margin-top: 80px;
     background-color:#C4C4C4;
 }
 
-.mainMaps{
+/* mapSec의 카카오 맵 세부 영역 */
+.maps{
     z-index:0;
     margin-top:48px;
     width:1278px;
     height:520px;
 }
 
+/* 스크롤을 맨 위로 올리는 hover 기능이 적용된 버튼, 좌측 하단에 위치하며 스크롤시에 비활성화됨 */
+.btnUp {
+    position:fixed;
+    width:50px;
+    height:50px;
+    top:90%;
+    left:95%;
+    opacity: 0.4;
+    z-index: 1;
+    border: none;
+    background-color:transparent;
+}
 
-/* 메인 SubScribe */
+.btnUp:hover {
+    position:fixed;
+    width:50px;
+    height:50px;
+    top:90%;
+    left:95%;
+    border: none;
+    z-index: 1;
+    opacity: 1;
+    background-color:transparent;
+}
 
-.mainSubscribeArea {
+
+/* SubScribe 영역 */
+.subsSec {
     position: relative;
     width: 1280px;
     height:201px;
@@ -194,7 +256,8 @@
     border-radius: 30px;
 }
 
-.mainSubscribeEmail {
+/* Subscribe 영역의 이메일 작성 전체 영역 */
+.subsEmail {
     position: relative;
     width:530px;
     height:60px;
@@ -202,7 +265,8 @@
     background-color: white;
 }
 
-.mainSubscribeButton{
+/* subscribe 버튼 렌더링 */
+.btnSubs{
     position: absolute;
     width: 135px;
     height: 50px;
@@ -214,7 +278,8 @@
     font-family: 'Pretendard-Regular';
 }
 
-.mainSubscribeInput {
+/* subscribe의 이메일 input 설정 */
+.subsInput {
     position: absolute;
     font-family: 'Pretendard-Regular';
     width: 290px;
@@ -228,7 +293,8 @@
     outline: none;
 }
 
-.mainSubText {
+/* subscribe 영역의 글 단락 전체 영역, email 영역과의 사이를 벌리기 위한 영역 설정 */
+.subsText {
     width: 471px;
     height: 99px;
     margin-top: 51px;
@@ -238,13 +304,15 @@
     flex-direction: column;
 }
 
-.mainSubEmailArea {
+/* subscribe 영역의 이메일 전체 영역 */
+.subsEmailArea {
     width:588px;
     height:inherit;
     align-content: center;
 }
 
-.mainSubscribeHead {
+/* subscribe 영역의 첫번째 단락 */
+.subsHead {
     width:448px;
     height:45px;
     font-family: 'Pretendard-Bold';
@@ -253,7 +321,8 @@
     color:white;
 }
 
-.mainSubscribeDetails {
+/* subscribe 영역의 두번째 단락 */
+.subsDetails {
     width:471px;
     height:36px;
     top: 113px;
@@ -264,10 +333,10 @@
     color:white;
 }
 
-/* 모달 관련 */
-
-.mainSubscribeModalBack {
+/* 모달 영역 */
+.modalSec {
     display: none;
+    z-index: 2;
     position:fixed;
     top:0;
     left:0;
@@ -278,7 +347,8 @@
     align-items: center;
 }
 
-.mainSubscribeModalBody{
+/* modal의 배경 이미지 설정 */
+.modalBody{
     position:absolute;
     top: 50%;
     left: 50%;
@@ -287,13 +357,15 @@
     height:400px;
 }
 
-.mainSubscribeModalCat {
+/* modal의 첫 단락 위의 작은 고양이 이미지 */
+.modalCat {
     position:absolute;
     top:60px;
     left:245px;
 }
 
-.mainSubscribeModalButton{
+/* modal 닫는 버튼 */
+.btnModal{
     position:absolute;
     width:183px;
     height: 50px;
@@ -304,7 +376,8 @@
     border:none;
 }
 
-.mainSubscribeModalText1 {
+/* modal의 첫 단락 */
+.modalText1 {
     position:absolute;
     width: 212px;
     height: 46px;
@@ -316,7 +389,9 @@
     line-height: 45px;
     text-align: center;
 }
-.mainSubscribeModalText2 {
+/* modal의 두번째 단락 */
+
+.modalText2 {
     position:absolute;
     width: 365px;
     height: 18px;
