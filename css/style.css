@@ -17,8 +17,6 @@
 
 /* 태그 선택자 설정 */
 body {
-    overflow-x: hidden;
-    overflow-y: auto;
 }
 
 main {
