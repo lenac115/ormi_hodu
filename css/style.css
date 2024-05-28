@@ -13,11 +13,10 @@
 *{
     margin:0;
     padding: 0;
+    max-width:1903px;
 }
 
 /* 태그 선택자 설정 */
-body {
-}
 
 main {
     width: 1280px;
