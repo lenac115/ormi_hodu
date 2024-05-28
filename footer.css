@@ -1,0 +1,34 @@
+
+/* footer 관련 설정 */
+/* footer의 호두 로고 */
+.footerLogo {
+    width: 226px;
+    height: 70px;
+    top: 45px;
+}
+
+/* footer의 외부 사이트 아이콘 리스트 */
+.footerIconGroup{
+    width:228px;
+    height:42px;
+    top:58px;
+    left:1052px;
+    display: flex;
+    gap:20px;
+}
+
+/* 아이콘 버튼의 렌더링을 위한 영역 설정 */
+.footerCircle {
+    width:42px;
+    height:42px;
+    border-radius: 50%;
+    background-color: #F29D52;
+    border: none;
+}
+
+/* 아이콘 버튼의 이미지 영역 설정 */
+.footerImg {
+    width: 24px;
+    height: 24px;
+    align-content: center;
+}
